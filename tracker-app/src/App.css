@@ -1,0 +1,314 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f4f4f4; 
+  color: #333; 
+  box-sizing: border-box;
+  
+ 
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+  background-color: #f0f0f0; 
+  padding: 4px 8px; 
+  border-radius: 4px; 
+  color: #d63384; 
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+header {
+  color: white; 
+  padding: 20px; 
+  text-align: center; 
+  background-image: url('https://img.freepik.com/premium-vector/stylized-colorful-wave-line-element-design_213860-722.jpg?w=996');
+  height: 90vh; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+header h2 {
+  margin: 0; 
+  font-size: 50px; 
+  padding-top: 4rem;
+}
+
+
+nav {
+  top: 0;
+  background-color: #333;
+  padding: 10px 20px;
+
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  
+
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #007bff;
+  
+
+}
+
+nav ul li a.active {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Status Bar */
+
+.filter {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  justify-content: center;
+  
+}
+
+.filter label {
+  margin-right: 10px;
+  font-weight: bold;
+  color: black;
+  font-size: 18px;
+}
+
+.filter select {
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter select:hover {
+  border-color: #007bff;
+}
+
+.filter select:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  border-color: #007bff;
+}
+
+/* Form */
+
+.form {
+  padding: 1em;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color:rgb(173, 219, 230);
+
+}
+.form label {
+color: black;
+font-size: 14px;
+}
+.form h2 {
+  color:black;
+}
+.form-input {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 50%;
+  box-sizing: border-box;
+  display: block;
+}
+
+.form-select {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 50%;
+  box-sizing: border-box;
+  display: block;
+}
+
+.form-button {
+  padding: 10px 15px;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.form-button:hover {
+  background-color: #0056b3;
+}
+
+
+
+/* About */
+.about {
+  padding: 20px;
+  font-size: 15px;
+}
+
+/* Application Lists */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px; 
+  padding: 16px; 
+  background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20230415/pngtree-website-technology-ray-blue-background-image_2344464.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+/* Application Items */
+.flex-item {
+  background-color: rgba(235, 229, 229, 0.8);
+  padding: 16px; 
+  color: black;
+  font-size: 14px;
+  border-radius: 8px; 
+  border: 1px solid rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 1 1 200px;
+  max-width: 300px;
+  text-align: center; 
+  transition: transform 0.3s ease; 
+}
+
+.flex-item:hover {
+  transform: translateY(-5px); 
+}
+
+p {
+  line-height: 1.6; 
+  margin-bottom: 16px; 
+}
+
+.flex-item button {
+  padding: 8px 12px;
+  margin: 5px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  background-color:#007bff; 
+  color: white;
+}
+
+.flex-item button:hover{
+  background-color: #0056b3;
+}
+
+
+@media (max-width: 768px) {
+  .flex-container {
+    padding: 8px;
+    background-size: cover;
+  }
+
+  .flex-item {
+    flex: 1 1 100%; 
+    max-width: 100%; 
+  }
+
+  nav ul {
+    flex-direction: column; 
+    gap: 8px; 
+  }
+}
+
+
+.signin-container {
+  background-image: url('https://img.freepik.com/free-photo/coins-job-word_23-2148568014.jpg?size=626&ext=jpg&ga=GA1.1.736327954.1723654538&semt=ais_hybrid');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.signin-form {
+  background: rgba(255, 255, 255, 0.8); 
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+}
+
+.signin-input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.signin-button {
+
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.signin-button:hover {
+  background-color: #45a049;
+}
+
+.application-details a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.application-details a:hover {
+  text-decoration: underline;
+}
